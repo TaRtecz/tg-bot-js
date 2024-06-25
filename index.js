@@ -26,8 +26,7 @@ bot.command("start", async (ctx) => {
 });
 
 bot.on("message", async (ctx) => {
-  console.log(ctx);
-  await ctx.reply("Your message - ", ctx.message.text);
+  await ctx.reply("Ваше сообщение - ", ctx.update.message.text);
 });
 
 bot.catch((error) => {
